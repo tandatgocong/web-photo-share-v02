@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+    <!-- DAT Add Here -->
+    <definition name=".mainLayout" path="/JSP/layouts/mainLayout.jsp">
+        <put name="title"  value="Sample Page Title" />
+        <put name="WebPhoto.header" value="/JSP/common/header.jsp" />
+        <put name="WebPhoto.menu"   value="/JSP/common/menu.jsp" />
+        <put name="WebPhoto.footer" value="/JSP/common/footer.jsp" />
+        <put name="WebPhoto.body"   value=".mainbody" />
+    </definition>
+    <definition name="Webphoto.home" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/home.jsp" />
+    </definition>
+    <definition name="WebPhoto.userProfile" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/userProfile.jsp" />
+    </definition>
+    <definition name="WebPhoto.viewPhoto" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/viewMyPhoto.jsp" />
+    </definition>
+    <definition name="WebPhoto.uploadPhoto" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/uploadPhoto.jsp" />
+    </definition>
+    <definition name="WebPhoto.feedback" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/feedback.jsp" />
+    </definition>
+    <definition name="WebPhoto.FAQs" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/FAQs.jsp" />
+    </definition>
+    <definition name="WebPhoto.Contact" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/Contact.jsp" />
+    </definition>
+
+    <definition name="WebPhoto.Login" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/Login.jsp" />
+    </definition>
+    <definition name="WebPhoto.Register" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/Register.jsp" />
+    </definition>
+    <definition name="WebPhoto.photodetail" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/viewPhotoDetail.jsp" />
+    </definition>
+    <definition name="WebPhoto.photomember" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/viewPhotoDMember.jsp" />
+    </definition>
+    <definition name="WebPhoto.addPhoto" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/addNewsPhoto.jsp" />
+    </definition>
+    <definition name="WebPhoto.editAlbum" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/editAlbum.jsp" />
+    </definition>
+     <definition name="AdminWebPhoto.forgotPass" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/users/forgotPass.jsp" />
+    </definition>
+     <definition name="AdminWebPhoto.sitemap" extends=".mainLayout">
+        <put name="WebPhoto.body" value="/JSP/home/sitemap.jsp" />
+     </definition>
+
+    <!-- Admin Page -->
+    <definition name=".adminLayout" path="/JSP/admin/layouts/AdminLayout.jsp">
+        <put name="title"  value="Sample Page Title" />
+        <put name="AdminWebPhoto.header" value="/JSP/admin/layouts/header.jsp" />
+        <put name="AdminWebPhoto.menu"   value="/JSP/admin/layouts/menu.jsp" />
+        <put name="AdminWebPhoto.footer" value="/JSP/admin/layouts/footer.jsp" />
+        <put name="AdminWebPhoto.body"   value=".mainbody" />
+    </definition>
+    <definition name="AdminWebPhoto.Login" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/adminLogin.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.Home" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/AdminHome.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.searchAccount" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Account/viewAccount.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.addAccount" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Account/AddAccount.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.searchFAQs" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/FAQs/viewFAQs.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.addFAQs" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/FAQs/addFAQs.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.searchFeedback" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Feedback/ViewFeedback.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.configOption" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/configOption.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.searchAlbum" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Albums/AdminHome.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.searchPhoto" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Albums/searchPhoto.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.searchComment" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Albums/managerContent.jsp" />
+    </definition>
+    <definition name="AdminWebPhoto.editContent" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/editContent.jsp" />
+    </definition>
+     <definition name="AdminWebPhoto.feedbackRelay" extends=".adminLayout">
+        <put name="AdminWebPhoto.body" value="/JSP/admin/Feedback/ReplyFeedback.jsp" />
+    </definition>
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+</tiles-definitions>

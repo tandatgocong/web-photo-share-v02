@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+    
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+      <action-mappings>
+        <!-- Users page -->
+        <action path="/home" forward="Webphoto.home"/>
+        <action path="/userProfile" forward="WebPhoto.userProfile"/>
+        <action path="/viewPhoto" forward="WebPhoto.viewPhoto"/>
+        <action path="/uploadPhoto" forward="WebPhoto.uploadPhoto"/>
+        <action path="/feedback" forward="WebPhoto.feedback"/>
+        <action path="/FAQs" forward="WebPhoto.FAQs"/>
+        <action path="/Contact" forward="WebPhoto.Contact"/>
+        <action path="/Login" forward="WebPhoto.Login"/>
+        <action path="/Register" forward="WebPhoto.Register"/>
+        <action path="/Logout" forward="/Logout"/>
+        <action path="/iLogin" forward="/Login"/>
+        <action path="/photodetail" forward="WebPhoto.photodetail"/>
+        <action path="/viewphotoMember" forward="WebPhoto.photomember"/>
+        <action path="/addPhoto" forward="WebPhoto.addPhoto"/>
+        <action path="/editAlbum" forward="WebPhoto.editAlbum"/>
+        <action path="/forgotPass" forward="AdminWebPhoto.forgotPass"/>
+        <action path="/sitemap" forward="AdminWebPhoto.sitemap"/>
+        <!-- Admin  Page-->
+        <action path="/cPanelLogin" forward="AdminWebPhoto.Login"/>
+        <action path="/adminHome" forward="AdminWebPhoto.Home"/>
+        <action path="/iAdminLogin" forward="/adminlogin"/>
+        <action path="/admin/searchAccount" forward="AdminWebPhoto.searchAccount"/>
+        <action path="/admin/addAccount" forward="AdminWebPhoto.addAccount"/>
+        <action path="/admin/searchFAQs" forward="AdminWebPhoto.searchFAQs"/>
+        <action path="/admin/addFAQs" forward="AdminWebPhoto.addFAQs"/>
+        <action path="/admin/searchFeedback" forward="AdminWebPhoto.searchFeedback"/>
+        <action path="/admin/configOption" forward="AdminWebPhoto.configOption"/>
+        <action path="/admin/searchAlbum" forward="AdminWebPhoto.searchAlbum"/>
+        <action path="/admin/searchPhoto" forward="AdminWebPhoto.searchPhoto"/>
+        <action path="/admin/searchComment" forward="AdminWebPhoto.searchComment"/>
+        <action path="/admin/editContent" forward="AdminWebPhoto.editContent"/>
+        <action path="/admin/replay" forward="AdminWebPhoto.feedbackRelay"/>
+
+
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

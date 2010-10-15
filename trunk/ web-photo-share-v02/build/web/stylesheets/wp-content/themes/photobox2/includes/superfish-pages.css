@@ -1,0 +1,121 @@
+/*** ESSENTIAL STYLES ***/
+.dropdown-pages, .dropdown-pages * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	text-align:		left;
+}
+.dropdown-pages {
+	line-height:	1.0;
+	position: 		relative;
+	z-index: 		7;
+}
+.dropdown-pages ul {
+	position:		absolute;
+	top:			-999em;
+	width:			15.95em; /* left offset of submenus need to match (see below) */
+}
+.dropdown-pages ul li {
+	width:			100%;
+}
+.dropdown-pages li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.dropdown-pages li {
+	float:			left;
+	position:		relative;
+}
+.dropdown-pages a {
+	display:		block;
+	position:		relative;
+	color: 			#919191;
+}
+.dropdown-pages li:hover ul,
+.dropdown-pages li.sfHover ul {
+	left:			0;
+	top:			2.25em; /* match top ul list item height */
+	z-index:		99;
+	padding:		10px;
+	background:		#f2f6f9;
+	border-bottom:	3px solid #dce2e7;
+	border-left:	1px solid #dce2e7;
+	border-right:	1px solid #dce2e7;
+}
+ul.dropdown-pages li:hover li ul,
+ul.dropdown-pages li.sfHover li ul {
+	top:			-999em;
+}
+ul.dropdown-pages li li:hover ul,
+ul.dropdown-pages li li.sfHover ul {
+	left:			16.8em; /* match ul width */
+	top:			0;
+	border-top:		1px solid #dce2e7;
+}
+ul.dropdown-pages li li:hover li ul,
+ul.dropdown-pages li li.sfHover li ul {
+	top:			-999em;
+}
+ul.dropdown-pages li li li:hover ul,
+ul.dropdown-pages li li li.sfHover ul {
+	left:			16.8em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.dropdown-pages {
+	float:			left;
+	margin-bottom:	1em;
+	padding: 		0;
+}
+.dropdown-pages a {
+	height:         19px;
+	padding:        7px 10px 0 10px;
+	border:		    none;
+	text-decoration:none;
+	float:			left;
+	background:		url("../images/topbar-pages-spacer.gif") no-repeat left top;
+}
+.dropdown-pages a:hover {
+	color: 			#afbbc5;
+}
+.dropdown-pages li {
+	background:		transparent;
+	padding:        0;
+}
+.dropdown-pages li li a {
+	width:			89%;
+	padding:		10px;
+	height:			15px;
+	color:          #99abb9;
+	display:		block;
+	background:		none;
+	border:			1px solid #f2f6f9;
+}
+.dropdown-pages li li a:hover {
+	color:          #576d7d;
+	background:		#fff;
+	border:			1px solid #e4ebf0;
+}
+.dropdown-pages li li {
+	background:		; /* match bg */
+	font-weight:	normal;
+}
+.dropdown-pages li li li {
+	background:		; /* match bg  */
+	font-weight:	normal;
+}
+.dropdown-pages li li li a {
+    width:			87.5%;
+	margin-left:	1px;
+	background:		none;
+}
+.dropdown-pages li li a:hover {
+	background:		;
+}
+.dropdown-pages li li li a:hover {
+	background:		; 
+}
+
+.dropdown-pages li ul li a:hover {
+	outline:		0;
+}

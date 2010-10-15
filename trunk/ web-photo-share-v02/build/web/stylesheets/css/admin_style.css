@@ -1,0 +1,203 @@
+html, body{
+	margin: 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	scrollbar-face-color:#dddddd;
+	scrollbar-highlight-color:#f6f6f6;
+	scrollbar-3dlight-color:#ededed;
+	scrollbar-darkshadow-color:#ededed;
+	scrollbar-shadow-color:#b7b7b7;
+	scrollbar-arrow-color:#000000;
+	scrollbar-track-color:#ededed;
+	font-size: 11px;
+}
+
+div.date_time{
+	font-size: 10px; font-weight: bold;
+	float: right;
+	position: relative;
+	top:68px; right:5px;
+}
+
+
+div.container_form{
+	margin: 70px auto;
+	padding: 45px 0 0 0; _padding-left: 0px;
+	width: 375px; height: 205px;
+	background: url(../images/login_bg.png) no-repeat;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.caption_form{
+	font-size: 11px; font-style:normal;
+	color: #555; padding-left: 70px; _padding-left: 0px; #padding-left: 0px;
+	text-align: left:
+}
+
+/*--------------------------------------*/
+
+
+div.account_contain{
+	width: 1000px; height: 25px;
+	margin: 0px auto;
+	border-top: 1px #FFF solid;
+	
+	line-height: 25px;
+}
+
+div.welcom_acc{
+	float: left;
+	position: relative; bottom: 10px; left: 10px;
+}
+
+.welcome{
+	font-size: 12px; font-weight: bold;
+	color:#c2d8ff; padding: 0 0 0 10px;
+}
+
+.accountname{
+	font-size: 12px; font-weight: bold;
+	color:#FFF; padding: 2px 0 0 5px;
+}
+
+div.link_main{
+	font-size: 10px;
+	color:#FFF;
+	float: right;
+}
+
+div.link_main a{
+	font-size: 11px; font-weight: bold;
+	color:#FFF; text-decoration:none;
+}
+
+div.link_main a:hover{
+	font-size: 11px; font-weight: bold;
+	color:#FFF; text-decoration: underline;
+}
+
+div.title_cpanel{
+	font-size: 18px; font-weight: bold;
+	color:#18479b;
+	width: 1000px; height: auto;
+	margin: 0px auto; text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+div.cpanel_container{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.cell_top{
+	vertical-align: top;
+}
+
+div.head_title_l{
+	width: 475px; height: 45px;
+	text-align: left;
+}
+
+div.left_zone{
+	margin-left: 15px; margin-right:20px;
+}
+
+div.head_title_r{
+	width: 475px; height: 45px;
+	text-align: left; margin-right: 15px;
+}
+
+div.head_title_l b, div.head_title_r b{
+	font-size: 14px; font-weight: bold;
+	color: #cc5b00;
+	padding-left: 50px;
+	line-height: 35px;
+}
+
+.news_title{
+	background: url(../images/head_corporate.png) no-repeat;
+}
+
+.corporate_title{
+	background: url(../images/head_corporate.png) no-repeat;
+}
+
+.ff_title{
+	background: url(../images/head_advertise.png) no-repeat;
+}
+
+.option_title{
+	background: url(../images/head_dbintergrity.png) no-repeat;
+}
+
+.otc_title{
+	background: url(../images/head_otc.png) no-repeat;
+}
+
+.content_title{
+	background: url(../images/head_industry.png) no-repeat;
+}
+
+.photo_title{
+	background: url(../images/head_role.png) no-repeat;
+}
+
+.importdata_title{
+	background: url(../images/head_importdata.png) no-repeat;
+}
+
+
+
+.list_link{
+	 margin-top:0;
+	 padding-left:25px;
+	 line-height: 170%!important;
+	 _padding-left:0px; #padding-left:0px;
+	 text-align: left;
+}
+
+.list_link span{
+	font-size: 12px; font-weight: bold;
+	color: #555;
+}
+
+.list_link b{
+	font-size: 12px;color: #cc5b00; font-style:normal; font-weight:normal;
+}
+
+.list_link a{
+	font-size: 12px;
+	color: #18479b; text-decoration:none;
+}
+
+.list_link a:hover{
+	font-size: 12px;
+	color: #18479b; text-decoration: underline;
+}
+
+.list_link .static-label {
+	color: #bbbbbb!important;
+	font-weight: normal!important;
+}
+
+.list_link .schedulerStatus {
+	color: #cc5b00!important;
+	font-weight: normal;
+}
+
+ul li{
+	font:normal 13px Arial, Tahoma, Helvetica, sans-serif;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 0px #AAA dotted;
+	padding-top: 5px; padding-bottom: 5px; padding-left: 22px;
+	background: url(../images/bullet0.png) no-repeat;
+	background-position: 0 6px;
+        list-style-type: none;
+}
+
+div.access-denied {
+	margin: 50px 0px 0px 100px;
+	color: red;
+	font-size: 12px;
+}

@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Sub Tabs Dropmenu------------------------------------*/
+
+/*.mainmenu {
+	padding:0 0 0 1px; #padding-left: 4px;
+	margin:0;
+	top: 2px;
+	list-style:none;
+	height:33px;
+	position:relative;
+	z-index:500;
+	font-family:Tahoma, Arial, verdana, sans-serif;
+	font-size: 12px; font-weight: bold;
+	background: url(../images/mainmenu0.gif) repeat-x;
+}*/
+
+.mainmenu{
+	margin: 0;
+	padding-left: 6px;
+	float: left;
+	width: 995px; height: 35px;
+	background: #FFF url(../images/menu_bg.png);
+	font-family:Tahoma, Arial, verdana, sans-serif;
+	font-size: 12px; font-weight: bold;
+}
+.adminnmenu{
+	margin: 0;
+	padding-left: 6px;
+	float: left;
+	width: 850px;
+	font-family:Tahoma, Arial, verdana, sans-serif;
+	font-size: 12px; font-weight: bold;
+        padding-top: 10px;
+}
+
+.mainmenu li.top {
+	display:block;
+	float:left;
+}
+
+.mainmenu li a.top_link {
+	display:block;
+	float:left;
+	height:35px;
+	line-height:32px;
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	padding:0 10px 0 12px; _padding-left: 1px;/* padding-right: distance of between tabs*/
+	cursor:pointer;
+	background: url(../images/mainmenu0.gif) no-repeat;
+}
+.mainmenu li a.top_link span {
+	float:left;
+	display:block;
+	padding:0 20px 0 10px; /*align left and right of text in tab*/
+	_padding-left: 26px; _padding-right: 26px;
+	#padding-left: 9px; #padding-right: 20px;
+	height:35px;
+	background:url(../images/mainmenu0.gif) right top;
+}
+.mainmenu li a.top_link:hover {
+	color:#cbe0ff;
+	background: url(../images/mainmenu1_left.gif) no-repeat;
+	line-height:35px;
+}
+.mainmenu li a.top_link:hover span {
+	background:url(../images/mainmenu1.gif) no-repeat right top;
+}
+.mainmenu li:hover > a.top_link {
+	color:#FFF;
+	background: url(../images/mainmenu1_left.gif) no-repeat;
+	line-height:35px;
+}
+.mainmenu li:hover > a.top_link span {
+	background:url(../images/mainmenu1.gif) no-repeat right top;
+}
+
+/*Current*/
+
+.mainmenu li.current {
+	display:block;
+	float:left;
+}
+
+.mainmenu li a.current_link {
+	display:block;
+	float:left;
+	height:35px;
+	line-height:32px;
+	color:#FFF;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	padding:0 10px 0 12px; _padding-left: 1px; /* padding-right: distance of between tabs*/
+	cursor:pointer;
+	background: url(../images/mainmenu1_left.gif) no-repeat;
+}
+.mainmenu li a.current_link span {
+	float:left;
+	display:block;
+	padding:0 20px 0 10px; /*align left and right of text in tab*/
+	_padding-left: 26px; _padding-right: 26px;
+	#padding-left: 9px; #padding-right: 20px;
+	height:35px; _height: 35px; _line-height:35px;
+	background:url(../images/mainmenu1.gif) right top;
+}
+.mainmenu li a.current_link:hover {
+	color:#FFF;
+	background: url(../images/mainmenu1_left.gif) no-repeat;
+	line-height:32px; _height: 35px; _line-height:35px;
+}
+.mainmenu li a.current_link:hover span {
+	background:url(../images/mainmenu1.gif) no-repeat right top;
+}
+.mainmenu li:hover > a.current_link {
+	color:#FFF;
+	background: url(../images/mainmenu1_left.gif) no-repeat;
+	line-height:35px;
+}
+.mainmenu li:hover > a.current_link span {
+	background:url(../images/mainmenu1.gif) no-repeat right top;
+}
+
+
+.mainmenu table {
+	border-collapse:collapse;
+	width:0;
+	height:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+/* Default link styling */
+
+/* Style the list OR link hover. Depends on which browser is used */
+
+.mainmenu a:hover {
+	visibility:visible;
+	position:relative;
+	z-index:200;
+}
+.mainmenu li:hover {
+	position:relative;
+	z-index:200;
+}
+/* keep the 'next' level invisible by placing it off screen. */
+.mainmenu ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	width:0;
+	height:0;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.mainmenu ul.sub_news {
+	width:150px;
+}
+
+.mainmenu ul.sub_analys {
+	width:150px;
+}
+
+.mainmenu ul.sub_shareholder {
+	width:137px;
+} 
+
+.mainmenu ul.sub_prod {
+	width:141px;
+}
+
+.mainmenu ul.sub_support {
+	width:145px;
+} 
+
+.mainmenu :hover ul {
+	left:4px;
+	top:35px;
+	background: #FFF;
+	padding:0px;
+	border:1px #003300 solid;
+	border-width:0 1px 1px;
+	white-space:nowrap;
+	height:auto;
+	z-index:300;
+}
+.mainmenu :hover ul li {
+	display:block;
+	height:20px; #line-height:20px;
+	padding-bottom: 2px;
+	position:relative;
+	font-weight:normal;
+	width:auto;
+	background: #00643E;
+	border: 1px #009966 dotted;
+	border-width: 0px 0px 1px 0px;
+	#border-bottom: 1px #267b5b solid;
+}
+
+.mainmenu :hover .last {
+	display:block;
+	height:20px;
+	position:relative;
+	font-weight:normal;
+	width:auto;
+	background: #00643E;
+	border-bottom: 0px
+}
+
+.mainmenu :hover ul li a {
+	display:block;
+	font-size:11px;
+	height:20px;
+	line-height:20px;
+	width:auto;
+	padding:0 0 0 7px; /* align left of text in sub*/
+	color:#FFF;
+	text-decoration:none;
+}
+.mainmenu :hover ul li a:hover {
+	background:#009966;
+	color:#fff;
+	padding-bottom: 2px;
+}
+
+/* Admin */
+div.account_contain{
+	width: 1000px; height: 25px;
+	margin: 0px auto;
+	border-top: 1px #FFF solid;
+	background-color:#006e43;
+	line-height: 25px;
+}
+
+div.welcom_acc{
+	float: left;
+	position: relative; bottom: 10px; left: 10px;
+}
+
+.welcome{
+	font-size: 12px; font-weight: bold;
+	color:#c2d8ff; padding: 0 0 0 10px;
+}
+
+.accountname{
+	font-size: 12px; font-weight: bold;
+	color:#FFF; padding: 2px 0 0 5px;
+}
+
+div.link_main{
+	font-size: 10px;
+	color:#FFF;
+	float: right;
+	/*position: absolute;
+	top: 85px; right: 0px;*/
+}
+
+div.link_main a{
+	font-size: 11px; font-weight: bold;
+	color:#FFF; text-decoration:none;
+}
+
+div.link_main a:hover{
+	font-size: 11px; font-weight: bold;
+	color:#FFF; text-decoration: underline;
+}
+
+div.title_admin{
+	font-size: 18px; font-weight: bold;
+	color:#18479b;
+	width: 1000px; height: auto;
+	margin: 0px auto; text-align: center;
+	padding: 10px 0 10px 0;
+}
+div.admin_container{
+	width: 1000px;
+	margin: 0px auto;
+}
