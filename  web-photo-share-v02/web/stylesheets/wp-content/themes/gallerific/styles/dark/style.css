@@ -1,0 +1,83 @@
+/* Blue & Orange Style for Business Professional Package */
+
+/* ---------------------------------------------------- */
+/* Style & Colors                                      
+
+
+body { background:#3c3c3c url('graphics/body_bg.gif') 0 39px repeat-x !important }
+ */
+/* Navigation */
+#navigation { background:url('graphics/nav_bg.gif') repeat-x }
+#navigation ul li { border-color:#939393 }
+#navigation a { color:#cccccc }
+#navigation a:hover { background:#939393; color:#fff }
+.main-navigation a { border-right:1px solid #939393 }
+.main-navigation li ul { background:#efefef; border:2px solid #fff }
+.main-navigation li ul ul { background:#efefef }
+.main-navigation ul ul a { color:#555555 !important; border-bottom:1px solid #dddddd; border-top:1px solid #ffffff }
+.main-navigation ul ul a:hover { border-top:1px solid #061B2F; border-bottom:1px solid #555555; color:#fff !important; background:#555555 !important }
+a.sf-with-ul .sf-sub-indicator { border-color:#6e6e6e #707070 #707070 #aaaaaa }	
+ul ul a.sf-with-ul .sf-sub-indicator { border-color:#efefef #efefef #efefef #555555 }
+ul a.sf-with-ul:hover .sf-sub-indicator { border-color:#939393 #939393 #939393 #fff }
+ul ul a.sf-with-ul:hover .sf-sub-indicator { border-color:#555555 #555555 #555555 #fff }
+
+/* Logo */
+.logo { background:url('graphics/logo.gif') no-repeat }
+
+/* Search & Address */
+.search-box { background:url('graphics/search_box.gif') no-repeat }
+.search-button { background:url('graphics/search_button.gif') no-repeat }
+.search-address, .search-box { color:#fff }
+.address, .phone-fax-title { color:#e0e0e0 }
+.icon-feed { background:url('graphics/icon_feed.png') no-repeat }
+
+/* Portfolio Slides */
+#featured { border:10px solid #fff }
+.top-slide, .bottom-slide { background:url('graphics/slider_bg.png') }
+.top-slide a, .bottom-slide a { color:#CEF4FF }
+.top-slide, .bottom-slide, .top-slide a:hover, .bottom-slide a:hover, .top-slide h2 a, .comments { color:#fff }
+a.arrow-right { background:#fff url('graphics/arrow_right_on.gif') no-repeat center center }
+a.arrow-left { background:#fff url('graphics/arrow_left_on.gif') no-repeat center center }
+.comments { background:url('graphics/icon_comments_ondark.png') 0 7px no-repeat }
+.home-full-wrap,.full-wrap { background:#fff }
+.full-wrap { border-top:10px solid #fff }
+.slider-pages, .slider-viewall { background:#fff }
+.slider-pages a { background:#c1c1c1; color:#696969 }
+.slider-pages a:hover { background:#999; color:#333 }
+.slider-pages a.active, .slider-pages a:hover.active { background:#3c3c3c; color:#fff }
+.slider-viewall a { background:#3c3c3c; color:#fff }
+
+/* Blog Posts */
+.post-block { border-top:1px solid #ccc }
+.post-block small { color:#555 }
+
+/* Content Area */
+#content h2, #sidebar h2 { color:#000000 }
+#content h3, #sidebar h3 { color:#000 }
+blockquote { border-top:1px solid #ddd !important; border-bottom:1px solid #ddd !important }
+blockquote p { color:#888 }
+#content .meta-area { background:#eee }
+#content small { font-size:#555 }
+#content .navigation.border { border-bottom:1px solid #ccc }
+.optionsOnHover { background:url('graphics/slider_bg.png') }
+.optionsOnHover a { color:#fff }
+.optionsOnHover a:hover { color:#ddd }
+#content input { color:#555; border:1px solid #777 }
+
+/* Comments */
+#commentform input { border:1px solid #ccc }
+#comment { border:1px solid #ccc }
+#submit { background:#3c3c3c; color:#FFF !important }
+.comment { border-bottom:1px solid #ccc }
+.reply a { background:#aaa !important; color:#FFF !important }
+.reply a:hover { background:#888 !important }
+.children .comment { border-top:1px solid #ccc; background:#fff }
+.children .children .comment { background:#fff }
+
+/* Sidebar */
+#sidebar { border-right:10px solid #fff; border-bottom:10px solid #fff; background:#EEE }
+#sidebar ul li li a { border-top:1px solid #cfcfcf }
+#sidebar ul li li a:hover { background:#3c3c3c; border-top:1px solid #3c3c3c; color:#fff }
+	
+/* Footer */
+
